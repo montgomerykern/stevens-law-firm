@@ -101,90 +101,14 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 col-sm-12">
                         <div class="main-menu-area">
-                            <nav>
-                                <ul>
-                                    <li class="current">
-                                        <a href="index.html">
-                                            <i class="fa fa-home"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="practice.html">Practice Areas</a>
-                                        <ul>
-                                            <li>
-                                                <a href="single-practice.html">Family Law</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-practice-left-sidebar.html">Criminal Law</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-practice.html">Divorce Law</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-practice.html">Industrial Law</a>
-                                            </li>
-                                            <li>
-                                                <a href="single-practice.html">Business Law</a>
-                                            </li>
-                                            <li class="has-child-menu">
-                                                <a href="#">Demo</a>
-                                                <ul class="thired-level">
-                                                    <li>
-                                                        <a href="#">Demo 1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Demo 2</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="awards.html">Awards</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                        <ul>
-                                            <li>
-                                                <a href="single.html">Single Blog</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Pages</a>
-                                        <ul class="mega-menu-style1">
-                                            <li>
-                                                <a href="index.html">Home Page 1</a>
-                                                <a href="index1.html">Home Page 2</a>
-                                                <a href="index2.html">Home Page 3</a>
-                                                <a href="index3.html">Home Page 4</a>
-                                                <a href="about.html">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="practice.html">PRACTICE AREAS</a>
-                                                <a href="single-practice.html">Family Law</a>
-                                                <a href="single-practice-left-sidebar.html">Crime Law</a>
-                                                <a href="awards.html">Awards</a>
-                                                <a href="blog.html">Blog</a>
-                                            </li>
-                                            <li>
-                                                <a href="single.html">Single Blog</a>
-                                                <a href="single-attorney.html">Attorney Details</a>
-                                                <a href="404.html">404 Page</a>
-                                                <a href="login.html">Login</a>
-                                                <a href="registration.html">Register</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </nav>
+
+
+                            <div class="menu">
+                                <div w3-include-html="modules/menu.html"></div>
                         </div>
+                        </div>
+
+                        
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 hidden-sm col-sm-12">
                         <div class="search-area">
@@ -1223,5 +1147,46 @@
     <!-- main JS
 		============================================ -->
     <script src="js/main.js"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
+    
+    <!-- -----------------------------------------------------------END------------------------------------------------------------- -->
+    
+    <!-- This Javascript will load external html5 files into the static html file and gives a centralized location to the Main Menu. -->
+    
+    <!-- -----------------------------------------------------------START----------------------------------------------------------- -->
+    
+    <script>
+        includeHTML();
+    </script>
+    
 </body>
 </html>
