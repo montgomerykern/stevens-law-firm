@@ -135,7 +135,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #cf9455;
+  color: #002147;
   text-decoration: none;
 }
 a:active,
@@ -154,7 +154,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #666666;
+  color: #002147;
   vertical-align: baseline;
 }
 .acurate {
@@ -166,11 +166,11 @@ body {
   text-align: center;
 }
 .section-title-area h2 {
-  color: #000000;
+  color: #002147;
   text-transform: uppercase;
 }
 .section-title-area h2::after {
-  background: #cf9455;
+  background: #002147;
   content: "";
   display: block;
   left: 0;
@@ -200,10 +200,10 @@ body {
   text-transform: uppercase;
 }
 .load-more a:hover {
-  background: #cf9455 none repeat scroll 0 0;
+  background: #002147 none repeat scroll 0 0;
 }
 div.owl-theme .owl-controls .owl-page span {
-  background: #cf9455 !important;
+  background: #002147 !important;
 }
 .text-blod {
   color: #000000;
@@ -224,7 +224,7 @@ div.owl-theme .owl-controls .owl-page span {
   line-height: 40px;
 }
 #preloader {
-  background: #282828 url('img/preloader.gif') no-repeat scroll center center;
+  background: #002147 url('img/preloader.gif') no-repeat scroll center center;
   height: 100%;
   left: 0;
   overflow: visible;
