@@ -2,6 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 /*---------------------------------------
+    Template Name: Miakolegal | Responsive HTML5 Template
+    Template URI: https://radiustheme.com/
+    Description:Miakolegal | Responsive HTML5 Template which used for lawyer.
+    Author: Radius Theme
+    Author URI: https://radiustheme.com/
+    Version: 1.0
+-----------------------------------------
     
     CSS INDEX
     ===================
@@ -128,7 +135,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #002147;
+  color: #cf9455;
   text-decoration: none;
 }
 a:active,
@@ -147,7 +154,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #002147;
+  color: #666666;
   vertical-align: baseline;
 }
 .acurate {
@@ -159,11 +166,11 @@ body {
   text-align: center;
 }
 .section-title-area h2 {
-  color: #002147;
+  color: #000000;
   text-transform: uppercase;
 }
 .section-title-area h2::after {
-  background: #002147;
+  background: #cf9455;
   content: "";
   display: block;
   left: 0;
@@ -193,10 +200,10 @@ body {
   text-transform: uppercase;
 }
 .load-more a:hover {
-  background: #002147 none repeat scroll 0 0;
+  background: #cf9455 none repeat scroll 0 0;
 }
 div.owl-theme .owl-controls .owl-page span {
-  background: #002147 !important;
+  background: #cf9455 !important;
 }
 .text-blod {
   color: #000000;
@@ -217,7 +224,7 @@ div.owl-theme .owl-controls .owl-page span {
   line-height: 40px;
 }
 #preloader {
-  background: #002147 url('img/preloader.gif') no-repeat scroll center center;
+  background: #282828 url('img/preloader.gif') no-repeat scroll center center;
   height: 100%;
   left: 0;
   overflow: visible;
@@ -484,7 +491,7 @@ li.has-child-menu:hover ul.thired-level {
 }
 .slider-area .button .btn-success {
   background-color: #cf9455;
-  border-color: #002147;
+  border-color: #cf9455;
   border-radius: 0;
   font-size: 14px;
   font-weight: 600;
@@ -703,32 +710,32 @@ p.call-now {
   color: #cf9455;
   font-weight: 600;
 }
-.about-lawyer-area .about-content-area p {  
-  color: #666666;   
-}   
-.about-lawyer-area .about-content-area ul li {  
-  color: #393939;   
-  font-size: 18px;  
-  font-weight: 600;   
-  padding: 6px 0;   
-}   
-.about-lawyer-area .about-content-area ul li::before {  
-  content: "\f00c";   
-  padding: 0 17px 0 0;  
-  left: 0;  
-  top: 0;   
-  font-family: FontAwesome;   
-  color: #cf9455;   
-}   
-.about-lawyer-area .about-content-area .read-more-button {  
-  position: relative;   
-  display: inline-block;  
-}   
-.about-lawyer-area .about-content-area .read-more-button a {  
-  background: transparent;  
-  color: #cf9455;   
-  display: inline-block;  
-  font-size: 14px;  
+.about-lawyer-area .about-content-area p {
+  color: #666666;
+}
+.about-lawyer-area .about-content-area ul li {
+  color: #393939;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 0;
+}
+.about-lawyer-area .about-content-area ul li::before {
+  content: "\f00c";
+  padding: 0 17px 0 0;
+  left: 0;
+  top: 0;
+  font-family: FontAwesome;
+  color: #cf9455;
+}
+.about-lawyer-area .about-content-area .read-more-button {
+  position: relative;
+  display: inline-block;
+}
+.about-lawyer-area .about-content-area .read-more-button a {
+  background: transparent;
+  color: #cf9455;
+  display: inline-block;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 40px;
   padding: 13px 40px;
@@ -813,7 +820,7 @@ p.call-now {
   visibility: visible;
 }
 .our-practice-area .practice-area .single-practice i {
-  color: #002147;
+  color: #cf9455;
   font-size: 45px;
 }
 .our-practice-area .practice-area .single-practice h3 a {
